@@ -65,3 +65,17 @@ body:before{background:radial-gradient(ellipse at 76% 6%,rgba(88,125,217,.14),tr
 .focus-state{display:inline-block;color:#cbb59e;font-size:10px;letter-spacing:.09em;text-transform:uppercase}
 .focus-item h4{margin-top:13px}
 @media(max-width:680px){.other-work-heading,.focus-heading{display:block;margin-top:44px}.other-work-heading p,.focus-heading p{margin-top:12px}.other-work-grid,.focus-grid{grid-template-columns:1fr}.other-work-card,.focus-item{padding:21px}}
+
+/* Public contact section — clear contact links instead of placeholder copy */
+.contact-inner{align-items:center}
+.contact-copy{flex:1;min-width:0;max-width:565px}
+.contact-copy p{line-height:1.8;font-size:15px;margin:0}
+.contact-details{display:grid;gap:12px;width:min(100%,470px);flex-shrink:0}
+.contact-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 20px;border:1px solid #435477;background:rgba(10,19,37,.26);border-radius:12px;color:var(--ink);transition:border-color .2s,background .2s}
+.contact-item:hover,.contact-item:focus-visible{border-color:var(--accent);background:rgba(131,172,255,.08);color:var(--ink)}
+.contact-item-text{display:flex;flex-direction:column;min-width:0;gap:3px}
+.contact-item-label{font-size:11px;color:#b3c3de;letter-spacing:.08em;text-transform:uppercase}
+.contact-item-value{font-size:15px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.contact-item-arrow{color:var(--accent);font-size:22px;flex-shrink:0}
+@media(max-width:950px){.contact-inner{align-items:start;flex-direction:column}.contact-details{width:100%;max-width:640px}}
+@media(max-width:680px){.contact-item{padding:15px 16px}.contact-item-value{font-size:14px}.contact-copy p{font-size:14px}}
